@@ -12,19 +12,19 @@ import time, random, sys, json, codecs, threading, glob, re, string, os, request
 from gtts import gTTS
 _session = requests.session()
 botStart = time.time()
-cl = LINE("EAJdpu1mg9N1Inlb2dR2.Ig5rhd9IEnesdDIECmoIGG.2cbsEvXE4rn6BXl3KyRciTHRHX5uPm7kGSyLVa4Vo3U=")
+cl = LINE("",appName = "IOS\t8.14.5\tnoobcoder\t7.0.0")
 cl.log("Auth Token : " + str(cl.authToken))
-ki = LINE("EAroZ0ilkvbl04C34oja.y+CiXIJKEniyWX0Rqt6S2G.nfSl5Ghjl2IB7rVMeAyHWy3oQ43fV/VbhUai5lUyxoo=")
+ki = LINE("",appName = "IOS\t8.14.5\tnoobcoder\t7.0.0"")
 ki.log("Auth Token : " + str(ki.authToken))
-kk = LINE("EAroZ0ilkvbl04C34oja.y+CiXIJKEniyWX0Rqt6S2G.nfSl5Ghjl2IB7rVMeAyHWy3oQ43fV/VbhUai5lUyxoo=")
+kk = LINE("",appName = "IOS\t8.14.5\tnoobcoder\t7.0.0")
 kk.log("Auth Token : " + str(kk.authToken))
-kc = LINE("EAh7Oz3uZBYDBI9ihig4.+ijNSd4IfM6sG9wB+d/OPa.Sq3wi/N8SIaFnI5gTGo7bu43RzrxXCFuCfYb1DK3zHk=")
+kc = LINE("",appName = "IOS\t8.14.5\tnoobcoder\t7.0.0")
 kc.log("Auth Token : " + str(kc.authToken))
-km = LINE("EA3ZhbdxooyPp5GDCzz7.8g3aAIUhNhBBEZyZiJLhLW.o9SYxw1UAMbRYlJYCQ5gw0KHrA/ZvGOp+Z+B5DAP5Ys=")
+km = LINE("",appName = "IOS\t8.14.5\tnoobcoder\t7.0.0")
 km.log("Auth Token : " + str(km.authToken))
-kb = LINE("EAdSo9u0bcf3gMlgDoO4.uNO8/9KCqUCG01I+jBmzDa.8ZnOLgxJYZAuolyXJVSvgkU+d0WM/iFEw7kHEYOlgTA=")
+kb = LINE("",appName = "IOS\t8.14.5\tnoobcoder\t7.0.0")
 kb.log("Auth Token : " + str(kb.authToken))
-sw = LINE("EAzUYoEAx55uMvfkOSda.MpGF2DoSsPawk9myWedgEG.pd2PbL3Xx72GMA6yqYT5y9NfBkVwthBbdtSnPpckPAs=")
+sw = LINE("",appName = "IOS\t8.14.5\tnoobcoder\t7.0.0")
 sw.log("Auth Token : " + str(sw.authToken))
 """
 【ツ】
@@ -33,11 +33,11 @@ sw.log("Auth Token : " + str(sw.authToken))
 #__________________________
 oepoll = OEPoll(cl)
 call = cl
-runnerResponse = "↳ᴛᴇᴀᴍ ɴᴅᴏᴋʙᴏᴛs ᴘʀᴏᴛᴇᴄᴛ\n【ツ】\n↳ᴛᴇᴀᴍ ɴᴅᴏᴋʙᴏᴛs ᴘʀᴏᴛᴇᴄᴛ"
-creator = ["ub1c5a71f27b863896e9d44bea857d35b","ufdc20b3a00b5e8f31e4f91017eb361b0","u886e511c3f6278d1120dd89e70c3a282"]
-owner = ["ub1c5a71f27b863896e9d44bea857d35b","ufdc20b3a00b5e8f31e4f91017eb361b0","u886e511c3f6278d1120dd89e70c3a282"]
-admin = ["ub1c5a71f27b863896e9d44bea857d35b","ufdc20b3a00b5e8f31e4f91017eb361b0","u886e511c3f6278d1120dd89e70c3a282"]
-staff = ["ufdc20b3a00b5e8f31e4f91017eb361b0","u886e511c3f6278d1120dd89e70c3a282"]
+runnerResponse = "id bots"
+creator = ["u727933583f8830a3fc254fb1b906b174"]
+owner = ["u437dbc7e45d4dbf5df35c1e7057f8337"]
+admin = ["u727933583f8830a3fc254fb1b906b174"]
+staff = ["u437dbc7e45d4dbf5df35c1e7057f8337"]
 lineProfile = cl.getProfile()
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
@@ -1092,7 +1092,7 @@ def bot(op):
                 else:
                     wait["blacklist"][op.param2] = True                    
                     try:
-                        cl.cancelGroupInvitation(op.param1,[op.param2])
+                        kb.cancelGroupInvitation(op.param1,[op.param2])
                     except:
                         try:
                             ki.cancelGroupInvitation(op.param1,[op.param2])
@@ -1126,7 +1126,7 @@ def bot(op):
                 else:
                     wait["blacklist"][op.param2] = True                    
                     try:
-                        cl.kickoutFromGroup(op.param1,[op.param2])
+                        kb.kickoutFromGroup(op.param1,[op.param2])
                     except:
                         try:
                             ki.kickoutFromGroup(op.param1,[op.param2])
@@ -1159,7 +1159,7 @@ def bot(op):
                 else:
                     wait["blacklist"][op.param2] = True                    
                     try:
-                        cl.kickoutFromGroup(op.param1,[op.param2])
+                        kb.kickoutFromGroup(op.param1,[op.param2])
                     except:
                         try:
                             ki.kickoutFromGroup(op.param1,[op.param2])
